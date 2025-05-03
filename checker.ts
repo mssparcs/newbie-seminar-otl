@@ -20,6 +20,7 @@ function problem1() {
   `
 }
 
+// 뭔가 BigInt와 관련된 문제때문에 json에 diff를 찍어보면 똑같은데 채점은 Incorrect로 나옵니다
 function problem2() {
   return prisma.$queryRaw`
     SELECT   e.sin AS sin,
@@ -195,7 +196,7 @@ function problem11() {
   `;
 }
 
-
+// 뭔가 BigInt와 관련된 문제때문에 json에 diff를 찍어보면 똑같은데 채점은 Incorrect로 나옵니다
 function problem14() {
   return prisma.$queryRaw`
     SELECT SUM(e.salary) AS totalSalary
